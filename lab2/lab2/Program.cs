@@ -266,9 +266,11 @@ namespace lab2
             (var a, var b) = (12, "42");
             Console.WriteLine(a + " " + b);
 
-            //TODO Продемонстрируйте различные способы распаковки кортежа.  Продемонстрируйте использование переменной(_). (доступно
+            int intval = tupl.Item1;
+            string strval = tupl.Item2;
 
-            
+            var (_, pop, _) = ("new york", 8175133, 468.48);
+            Console.WriteLine(pop);
         }
 
         private static (int, int, int, char) taskTupleFunction(int[] arr, string str)
