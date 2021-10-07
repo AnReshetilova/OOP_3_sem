@@ -10,9 +10,10 @@ namespace lab2
     {
         static void Main(string[] args)
         {
-            // Task1();
-            // Task2();
-            // Task3();
+            //Task1();
+            Task2();
+            //Task3();
+            //Task4();
 
             //(int, int, int, char) tuple;
             //int[] arr = { 3, 4, 5, 6 };
@@ -20,8 +21,8 @@ namespace lab2
             //tuple = taskTupleFunction(arr, str);
             //Console.WriteLine(tuple.Item1 + " " + tuple.Item2 + " " + tuple.Item3 + " " + tuple.Item4);
 
-            checkedFunction();
-            uncheckedFunction();
+            //checkedFunction();
+            //uncheckedFunction();
         }
         private static void Task1()
         {
@@ -93,15 +94,7 @@ namespace lab2
             var implicitlyTyped = 42;
             Console.WriteLine(implicitlyTyped.GetType());
 
-            int? maybeNull = 42;
-            if (maybeNull is int)
-            {
-                Console.WriteLine(maybeNull);
-            }
-            else
-            {
-                Console.WriteLine("null");
-            }
+            Nullable<int> nullVal = null;
 
             var implicitlyTypedError = 1;
             //implicitlyTypedError = true;
