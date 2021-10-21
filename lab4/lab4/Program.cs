@@ -36,7 +36,6 @@ namespace lab4
             Console.WriteLine($"id: {Vector.Owner.id} name: {Vector.Owner.name} organisation: {Vector.Owner.organisation}");
             Console.WriteLine($"Creation date: {Vector.Date.creationDate}");
 
-            //they made me...
             vector2 = vector2 == vector;
             vector2.GetVector();
 
@@ -51,6 +50,11 @@ namespace lab4
 
             vector2.RemovePositive();
             vector2.GetVector();
+
+            if (vector)
+            {
+                Console.WriteLine("Not empty");
+            }
 
             string str = "smthsmthsmth";
             Console.WriteLine(str.CutString(4));
