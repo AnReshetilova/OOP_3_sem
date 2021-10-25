@@ -8,10 +8,10 @@ namespace lab5.Vehicles
 {
     class Ship: Vehicle
     {
-        string CaptainName { get; set; }
-        public Ship(string name, string captainName) : base(name)
+        public People.Captain Captain { get; set; }
+        public Ship(string name, People.Captain captain) : base(name)
         {
-            CaptainName = captainName;
+            Captain = captain;
         }
         public override void Move()
         {

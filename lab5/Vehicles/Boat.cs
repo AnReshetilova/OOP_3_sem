@@ -9,7 +9,7 @@ namespace lab5.Vehicles
     class Boat : Ship
     {
         int CountOfPaddles { get; set; }
-        public Boat(string name, string captainName, int countOfPaddles) : base(name, captainName)
+        public Boat(string name, People.Captain captain, int countOfPaddles) : base(name, captain)
         {
             CountOfPaddles = countOfPaddles;
         }

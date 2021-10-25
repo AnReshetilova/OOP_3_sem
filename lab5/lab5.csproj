@@ -43,8 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\Port.cs" />
+    <Compile Include="Controllers\PortController.cs" />
+    <Compile Include="Controllers\ShipsEnumController.cs" />
+    <Compile Include="Controllers\Ships.cs" />
     <Compile Include="People\Captain.cs" />
-    <Compile Include="People\IHuman.cs" />
+    <Compile Include="People\IOwner.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vehicles\Boat.cs" />

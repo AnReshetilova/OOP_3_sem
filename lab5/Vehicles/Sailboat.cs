@@ -8,10 +8,10 @@ namespace lab5.Vehicles
 {
     class Sailboat : Ship
     {
-        int CountOfSail { get; set; }
-        public Sailboat(string name, string captainName, int countOfSail) : base(name, captainName)
+        public int Displacement { get; set; }
+        public Sailboat(string name, People.Captain captain, int displacement) : base(name, captain)
         {
-            CountOfSail = countOfSail;
+            Displacement = displacement;
         }
         public override string ToString()
         {

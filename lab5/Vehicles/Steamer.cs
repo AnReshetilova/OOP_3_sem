@@ -8,10 +8,10 @@ namespace lab5.Vehicles
 {
     class Steamer: Ship
     {
-        int CountOfPipes { get; set; }
-        public Steamer(string name, string captainName, int countOfPipes) :base (name, captainName)
+        public int Seats { get; set; }
+        public Steamer(string name, People.Captain captain, int seats) :base (name, captain)
         {
-            CountOfPipes = countOfPipes;
+            Seats = seats;
         }
         public override string ToString()
         {

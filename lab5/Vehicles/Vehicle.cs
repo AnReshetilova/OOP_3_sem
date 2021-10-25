@@ -8,7 +8,7 @@ namespace lab5.Vehicles
 {
     public abstract class Vehicle
     {
-        protected string Name { get; set; }
+        public string Name { get; set; }
         public Vehicle(string name)
         {
             Name = name;

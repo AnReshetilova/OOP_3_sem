@@ -9,7 +9,7 @@ namespace lab5.Vehicles
     class Corvette: Ship
     {
         int CountOfGuns { get; set; }
-        public Corvette(string name, string captainName, int countOfGuns) : base(name, captainName)
+        public Corvette(string name, People.Captain captain, int countOfGuns) : base(name, captain)
         {
             CountOfGuns = countOfGuns;
         }
