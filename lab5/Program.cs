@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using lab5.Controllers;
+using lab5.Exceptions;
+using lab5.Vehicles;
+using lab5.Logger;
+using System.Diagnostics;
 
 namespace lab5
 {
@@ -42,6 +47,8 @@ namespace lab5
             //    printer.IAmPrinting(n);
             //}
             #endregion
+
+            #region lab6
             People.Captain cap1 = new People.Captain("Sven", 60);
 
             Vehicles.Boat boat = (Vehicles.Boat)Controllers.ShipEnumController.GetShip(Controllers.Ships.Boat);
@@ -60,12 +67,71 @@ namespace lab5
             port.AddElement(steamer);
             port.AddElement(steamer2);
 
-            port.GetShips();
-            Console.WriteLine(port.GetSeats());
-            Console.WriteLine(port.GetDispalcement());
+            //port.GetShips();
+            //Console.WriteLine(port.GetSeats());
+            //Console.WriteLine(port.GetDispalcement());
 
-            Controllers.Port port1 = port.GetShipsWithYoungCaptains();
-            port1.GetShips();
+            //Controllers.Port port1 = port.GetShipsWithYoungCaptains();
+            //port1.GetShips();
+            #endregion lab6
+
+            #region lab7
+
+            Console.WriteLine("Find by index...");
+            int index = int.Parse(Console.ReadLine());
+            ILogger FileLog = new FileLogger();
+            ILogger ConsoleLog = new ConsoleLogger();
+
+            try
+            {             
+                //if (index >= port.Length)
+                //{
+                //    throw new ShipIndexOutOfRangeException();
+                //}
+
+                //Ship ship = new Ship(null, null);
+
+                //if (ship as Corvette == null)
+                //{
+                //    throw new InconvertableException();
+                //}
+
+                //if (ship.Name is null && ship.Captain is null)
+                //{
+                //    throw new EmptyShipObjectException();
+                //}
+
+                int x = 10, y = 0;
+                x = x / y;
+
+                int[] arr = new int[2];
+                arr[5] = 10;
+            }
+            catch (ShipIndexOutOfRangeException e)
+            {
+                e.PrintMessage();
+            }
+            catch (InconvertableException e)
+            {
+                e.PrintMessage();
+            }
+            catch (EmptyShipObjectException e)
+            {
+                e.PrintMessage();
+            }
+            catch (Exception e)
+            {
+                FileLog.PrintMessage(e.Message);
+                ConsoleLog.PrintMessage(e.Message);
+            }
+            finally
+            {
+                Console.WriteLine("This code will be running definitely");
+            }
+
+            Debug.Assert(index < port.Length);
+            #endregion
         }
+
     }
 }

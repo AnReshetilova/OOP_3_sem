@@ -47,6 +47,12 @@
     <Compile Include="Controllers\PortController.cs" />
     <Compile Include="Controllers\ShipsEnumController.cs" />
     <Compile Include="Controllers\Ships.cs" />
+    <Compile Include="Exceptions\EmptyShipObjectException.cs" />
+    <Compile Include="Exceptions\InconvertableException.cs" />
+    <Compile Include="Exceptions\ShipIndexOutOfRangeException.cs" />
+    <Compile Include="Logger\ConsoleLogger.cs" />
+    <Compile Include="Logger\FileLogger.cs" />
+    <Compile Include="Logger\ILogger.cs" />
     <Compile Include="People\Captain.cs" />
     <Compile Include="People\IOwner.cs" />
     <Compile Include="Program.cs" />

@@ -110,6 +110,5 @@ namespace lab5.Controllers
                 Console.WriteLine(e.Message);
             }
         }
-
     }
 }
