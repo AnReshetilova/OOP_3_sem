@@ -82,52 +82,52 @@ namespace lab5
             ILogger FileLog = new FileLogger();
             ILogger ConsoleLog = new ConsoleLogger();
 
-            try
-            {             
-                //if (index >= port.Length)
-                //{
-                //    throw new ShipIndexOutOfRangeException();
-                //}
+            //try
+            //{
+            ////    if (index >= port.Length)
+            ////    {
+            ////        throw new ShipIndexOutOfRangeException();
+            ////    }
 
-                //Ship ship = new Ship(null, null);
+            ////    Ship ship = new Ship(null, null);
 
-                //if (ship as Corvette == null)
-                //{
-                //    throw new InconvertableException();
-                //}
+            ////    if (ship as Corvette == null)
+            ////    {
+            ////        throw new InconvertableException();
+            ////    }
 
-                //if (ship.Name is null && ship.Captain is null)
-                //{
-                //    throw new EmptyShipObjectException();
-                //}
+            //    //if (ship.Name is null && ship.Captain is null)
+            //    //{
+            //    //    throw new EmptyShipObjectException();
+            //    //}
 
-                int x = 10, y = 0;
-                x = x / y;
+            //    int x = 10, y = 0;
+            //    x = x / y;
 
-                int[] arr = new int[2];
-                arr[5] = 10;
-            }
-            catch (ShipIndexOutOfRangeException e)
-            {
-                e.PrintMessage();
-            }
-            catch (InconvertableException e)
-            {
-                e.PrintMessage();
-            }
-            catch (EmptyShipObjectException e)
-            {
-                e.PrintMessage();
-            }
-            catch (Exception e)
-            {
-                FileLog.PrintMessage(e.Message);
-                ConsoleLog.PrintMessage(e.Message);
-            }
-            finally
-            {
-                Console.WriteLine("This code will be running definitely");
-            }
+            //    int[] arr = new int[2];
+            //    arr[5] = 10;
+            //}
+            //catch (ShipIndexOutOfRangeException e)
+            //{
+            //    e.PrintMessage();
+            //}
+            //catch (InconvertableException e)
+            //{
+            //    e.PrintMessage();
+            //}
+            //catch (EmptyShipObjectException e)
+            //{
+            //    e.PrintMessage();
+            //}
+            //catch (Exception e)
+            //{
+            //    FileLog.PrintMessage(e.Message);
+            //    ConsoleLog.PrintMessage(e.Message);
+            //}
+            //finally
+            //{
+            //    Console.WriteLine("OK");
+            //}
 
             Debug.Assert(index < port.Length);
             #endregion
