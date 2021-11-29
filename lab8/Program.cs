@@ -38,7 +38,6 @@ namespace lab8
             Collection<string> str = port.FromFile();
 
             str.GetElements();
-
         }
     }
 }
