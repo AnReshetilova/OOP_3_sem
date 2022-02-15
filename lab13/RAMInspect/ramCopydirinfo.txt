@@ -1,0 +1,11 @@
+DIRECTORIES
+$RECYCLE.BIN
+ksis_virtual
+RAM-2021
+SETUP
+SIA-2020-master
+System Volume Information
+WALLPAPER
+WSA-2020-master
+вуз
+FILES
